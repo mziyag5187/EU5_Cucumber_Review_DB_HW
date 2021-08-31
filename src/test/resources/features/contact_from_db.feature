@@ -1,6 +1,6 @@
 Feature: Contact page should display customer contact details
 
-  @db
+
   Scenario: Contacts test with email
     Given the user is on the login page
     Given the user logged in as "salesManager"
@@ -11,7 +11,7 @@ Feature: Contact page should display customer contact details
   @db
   Scenario: Vehicle model UI DB Comparison
     Given the user is on the login page
-    Given the user logged in as "salesManager"
-    And the user navigates to "Fleet", "Vehicles Models"
+    Given the user logged in as "storeManager"
+    And the user navigates to "Fleet", "Vehicles Model"
     When the user clicks the "Mazda" from List
     Then the Vehicle model information should be same with database
